@@ -2,5 +2,18 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(160, 179, 179);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.4;
+}
+
+h1 {
+  color: rgb(222, 62, 4);
 }
