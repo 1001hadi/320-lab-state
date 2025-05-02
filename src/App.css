@@ -1,19 +1,56 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   /* text-align: center; */
 }
 
 body {
-  font-family: sans-serif;
-  background-color: rgb(160, 179, 179);
+  background: #94b4c1;
   color: #333;
-  margin: 0;
-  padding: 20px;
-  line-height: 1.4;
 }
 
 h1 {
-  color: rgb(222, 62, 4);
+  color: #083a70;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main-container {
+  max-width: 1280px;
+  margin: 20px auto;
+  background-color: #547792;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.learner-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.learner {
+  background: #d5d6cc;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #213448;
+}
+
+.learner h2 {
+  color: #213448;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.learner p {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.learner h4 {
+  color: #213448;
+  border-top: 2px solid #213448;
+  padding-top: 5px;
 }
