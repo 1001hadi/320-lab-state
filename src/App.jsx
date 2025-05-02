@@ -1,12 +1,23 @@
-import learner from "./data.js";
 import "./App.css";
+import learnerArr from "./data.js";
+import { useState } from "react";
+import { Learner } from "./components/Learner.jsx";
 
 function App() {
-  console.log(learner);
+  const [learnerInfo, setLearnerInfo] = useState(learnerArr);
+  // console.log(learnerInfo);
 
   return (
+    // map over the state(learnerInfo) and display learner in Learner component
     <>
-      <div></div>
+      <div className="main-container">
+        <h1>Learners Info Display</h1>
+        <div className="learner-section">
+          {learnerInfo.map((learner, i) => {
+            <Learner key={i} learner={learner} />;
+          })}
+        </div>
+      </div>
     </>
   );
 }
