@@ -6,7 +6,7 @@ import { Learner } from "./components/Learner.jsx";
 function App() {
   const [learnerInfo, setLearnerInfo] = useState(learnerArr);
   // map function moved to variable after dylan lecture
-  let mapedData = learnerInfo.map((learner, i) => (
+  let mapLearner = learnerInfo.map((learner, i) => (
     <Learner key={i} learner={learner} />
   ));
 
@@ -15,7 +15,7 @@ function App() {
     <>
       <div className="main-container">
         <h1>Learners Info Display</h1>
-        <div className="learner-section">{mapedData}</div>
+        <div className="learner-section">{mapLearner}</div>
       </div>
     </>
   );

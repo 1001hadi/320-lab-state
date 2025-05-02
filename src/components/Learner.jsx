@@ -5,7 +5,7 @@ export const Learner = ({ learner }) => {
   //  map over scores data to collect score and the date
   //   console.log(learner.name);
   // map function moved to variable after dylan lecture
-  let mapedScores = learner.scores.map((score, i) => (
+  let mapScores = learner.scores.map((score, i) => (
     <Score key={i} scoreInfo={score} />
   ));
   return (
@@ -13,7 +13,7 @@ export const Learner = ({ learner }) => {
       <h2>{learner.name}</h2>
       <p>{learner.bio}</p>
       <h4>Scores:</h4>
-      {mapedScores}
+      {mapScores}
     </div>
   );
 };
