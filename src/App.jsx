@@ -5,7 +5,6 @@ import { Learner } from "./components/Learner.jsx";
 
 function App() {
   const [learnerInfo, setLearnerInfo] = useState(learnerArr);
-  // console.log(learnerInfo);
 
   return (
     // map over the state(learnerInfo) and display learner in Learner component
@@ -13,9 +12,9 @@ function App() {
       <div className="main-container">
         <h1>Learners Info Display</h1>
         <div className="learner-section">
-          {learnerInfo.map((learner, i) => {
-            <Learner key={i} learner={learner} />;
-          })}
+          {learnerInfo.map((learner, i) => (
+            <Learner key={i} learner={learner} />
+          ))}
         </div>
       </div>
     </>
